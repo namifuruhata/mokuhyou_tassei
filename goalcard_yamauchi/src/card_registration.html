@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ポイントカード</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    
+</head>
+
+<body>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="card_registration.html">カード登録</a></li>
+      <li><a href="exchange.php">交換</a></li>
+      <li><a href="index.html">カード管理</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+           <li><a href="top.html">サービス説明</a></li>
+      <div class="button_group">
+ </div>
+  </nav>
+</header>
+
+<!-- カード作成フォーム -->
+<div class="card">
+    <h2>ポイントカード登録</h2>
+    <form action="card_registration.php" method="POST">
+        <input type="hidden" name="action" value="create_card">
+        カードの名前: <input type="text" name="card_name" required><br>
+        目標期日: <input type="date" name="goal_date" required><br>
+        ルール: <input type="text" name="rule" required><br>
+        報酬: <input type="text" name="reward" required><br>
+        <input type="submit" value="カードを作成">
+    </form>
+</div>
+
+
+
+</body>
+</html>
